@@ -80,9 +80,10 @@ resource "aws_s3_bucket_versioning" "bucket_versioning" {
 
 resource "aws_db_instance" "postgres_instance" {
   allocated_storage = 10
+  storage_type = "gp2"
   engine = "postgres"
-  engine_version = "14.4"
-  instance_class = "db.t2.micro"
+  engine_version = "15.2"
+  instance_class = "db.t3.micro"
   db_name = "mydb"
   username = "foo"
   password = "foobarbaz"
