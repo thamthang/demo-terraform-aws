@@ -1,11 +1,11 @@
 terraform {
-  backend "remote" {
-    organization = "thomas-devops-directive"
+  # backend "remote" {
+  #   organization = "thomas-devops-directive"
 
-    workspaces {
-      name = "demo-terraform-aws"
-    }
-  }
+  #   workspaces {
+  #     name = "demo-terraform-aws"
+  #   }
+  # }
 
   required_providers {
     aws ={
