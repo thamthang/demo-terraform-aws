@@ -30,3 +30,9 @@ variable "db_password" {
     type = string
     sensitive = true
 }
+
+variable "env_name" {
+  description = "Deployment environment (dev/staging/prod)"
+  type = string
+  default = "dev"
+}
